@@ -7,23 +7,119 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DB18998A2965938400794CC2 /* UIViewController+IndicatorVIew.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB1899892965938400794CC2 /* UIViewController+IndicatorVIew.swift */; };
+		DB283F18295F0F3C00BB2C84 /* CustomAlertBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB283F17295F0F3C00BB2C84 /* CustomAlertBaseViewController.swift */; };
+		DB283F2A2960166E00BB2C84 /* UINavigationController+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB283F292960166E00BB2C84 /* UINavigationController+Ext.swift */; };
+		DB366A512963F77400C6A6B8 /* AppInquiryHistoryTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB366A502963F77400C6A6B8 /* AppInquiryHistoryTVC.swift */; };
+		DB366A542963F79800C6A6B8 /* AppInquiryTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB366A532963F79800C6A6B8 /* AppInquiryTVC.swift */; };
+		DB366A562963F7DA00C6A6B8 /* AppInquiryHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB366A552963F7DA00C6A6B8 /* AppInquiryHeaderView.swift */; };
+		DB366A832965318F00C6A6B8 /* UIViewController+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB366A822965318F00C6A6B8 /* UIViewController+Ext.swift */; };
+		DB366A852965336000C6A6B8 /* AlertLogoutVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB366A842965336000C6A6B8 /* AlertLogoutVC.swift */; };
+		DB366A872965336B00C6A6B8 /* AlertNickNameVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB366A862965336B00C6A6B8 /* AlertNickNameVC.swift */; };
 		DB4147732955AEE000FABBCA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB4147722955AEE000FABBCA /* AppDelegate.swift */; };
 		DB4147752955AEE000FABBCA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB4147742955AEE000FABBCA /* SceneDelegate.swift */; };
-		DB4147772955AEE000FABBCA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB4147762955AEE000FABBCA /* ViewController.swift */; };
+		DB4147772955AEE000FABBCA /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB4147762955AEE000FABBCA /* MainViewController.swift */; };
 		DB41477A2955AEE000FABBCA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB4147782955AEE000FABBCA /* Main.storyboard */; };
 		DB41477C2955AEE100FABBCA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB41477B2955AEE100FABBCA /* Assets.xcassets */; };
 		DB41477F2955AEE100FABBCA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB41477D2955AEE100FABBCA /* LaunchScreen.storyboard */; };
+		DB41478B2955AFC300FABBCA /* UIViewController+Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB41478A2955AFC300FABBCA /* UIViewController+Alert.swift */; };
+		DB41478D2955AFC900FABBCA /* UITextField+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB41478C2955AFC900FABBCA /* UITextField+Ext.swift */; };
+		DB41478F2955B01500FABBCA /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB41478E2955B01500FABBCA /* Model.swift */; };
+		DB4147912955B01A00FABBCA /* DummyData.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB4147902955B01A00FABBCA /* DummyData.swift */; };
+		DB4147932955B06F00FABBCA /* TermsOfServiceTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB4147922955B06F00FABBCA /* TermsOfServiceTVC.swift */; };
+		DB4147952955B07300FABBCA /* MemberInfoManagementTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB4147942955B07300FABBCA /* MemberInfoManagementTVC.swift */; };
+		DB4147972955B07700FABBCA /* OrderCustomHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB4147962955B07700FABBCA /* OrderCustomHeaderView.swift */; };
+		DB41479D2955B16200FABBCA /* WeekTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB41479C2955B16100FABBCA /* WeekTVC.swift */; };
+		DB41479F2955B16500FABBCA /* Month1TVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB41479E2955B16500FABBCA /* Month1TVC.swift */; };
+		DB4147A12955B16800FABBCA /* Month3TVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB4147A02955B16800FABBCA /* Month3TVC.swift */; };
+		DB4147A32955B16B00FABBCA /* TotalTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB4147A22955B16B00FABBCA /* TotalTVC.swift */; };
+		DB4147A62955B1CE00FABBCA /* OHDetail1TVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB4147A52955B1CE00FABBCA /* OHDetail1TVC.swift */; };
+		DB4147A82955B1D000FABBCA /* OHDetail2TVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB4147A72955B1D000FABBCA /* OHDetail2TVC.swift */; };
+		DB4147AA2955B1D900FABBCA /* OHDetail3TVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB4147A92955B1D900FABBCA /* OHDetail3TVC.swift */; };
+		DB4147AC2955B1DB00FABBCA /* OHDetail4TVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB4147AB2955B1DB00FABBCA /* OHDetail4TVC.swift */; };
+		DB4147AE2955B23900FABBCA /* CardNameTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB4147AD2955B23900FABBCA /* CardNameTVC.swift */; };
+		DB4147B02955B23C00FABBCA /* CardNumberTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB4147AF2955B23C00FABBCA /* CardNumberTVC.swift */; };
+		DB4147B22955B26500FABBCA /* CardExpirationPeriodTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB4147B12955B26500FABBCA /* CardExpirationPeriodTVC.swift */; };
+		DB4147B42955B26700FABBCA /* CardPWTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB4147B32955B26700FABBCA /* CardPWTVC.swift */; };
+		DB4147B62955B26900FABBCA /* CardDivisionTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB4147B52955B26900FABBCA /* CardDivisionTVC.swift */; };
+		DB4147B82955B2EE00FABBCA /* EventCustomHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB4147B72955B2EE00FABBCA /* EventCustomHeaderView.swift */; };
+		DB4147BA2955B2F000FABBCA /* EventAndRankingEventTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB4147B92955B2F000FABBCA /* EventAndRankingEventTVC.swift */; };
+		DB4147BC2955B2F200FABBCA /* NoticeTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB4147BB2955B2F200FABBCA /* NoticeTVC.swift */; };
+		DB4147BE2955B37F00FABBCA /* TermsOfServiceVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB4147BD2955B37F00FABBCA /* TermsOfServiceVC.swift */; };
+		DB4147C52955B3D500FABBCA /* TOSDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB4147C42955B3D500FABBCA /* TOSDetailVC.swift */; };
+		DB4147C72955B4AA00FABBCA /* EventAndNoticeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB4147C62955B4AA00FABBCA /* EventAndNoticeVC.swift */; };
+		DB4147C92955B4AC00FABBCA /* EANDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB4147C82955B4AC00FABBCA /* EANDetailVC.swift */; };
+		DB4147CB2955B56700FABBCA /* SimpleCardManagementVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB4147CA2955B56700FABBCA /* SimpleCardManagementVC.swift */; };
+		DB4147CD2955B56C00FABBCA /* OrderHistroyVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB4147CC2955B56C00FABBCA /* OrderHistroyVC.swift */; };
+		DB4147CF2955B59F00FABBCA /* SCRegistrationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB4147CE2955B59F00FABBCA /* SCRegistrationVC.swift */; };
+		DB4147D12955B68F00FABBCA /* OHDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB4147D02955B68F00FABBCA /* OHDetailVC.swift */; };
+		DB5AD24A295B039C002324C7 /* UnRegisterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB5AD249295B039C002324C7 /* UnRegisterVC.swift */; };
+		DB5AD24C295B039E002324C7 /* PermissionSettingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB5AD24B295B039E002324C7 /* PermissionSettingVC.swift */; };
+		DB5AD24F295B03B0002324C7 /* MemberInfoManagementVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB5AD24E295B03B0002324C7 /* MemberInfoManagementVC.swift */; };
+		DB5AD253295B03B4002324C7 /* AccountSettingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB5AD252295B03B4002324C7 /* AccountSettingVC.swift */; };
+		DB5AD255295B061B002324C7 /* UIColor+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB5AD254295B061B002324C7 /* UIColor+Ext.swift */; };
+		DB5AD257295B0678002324C7 /* ServiceCenterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB5AD256295B0678002324C7 /* ServiceCenterVC.swift */; };
+		DB5AD25B295B067C002324C7 /* AppInquiryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB5AD25A295B067C002324C7 /* AppInquiryVC.swift */; };
+		DB5AD25D295B067E002324C7 /* ChoiceInquiryTypeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB5AD25C295B067E002324C7 /* ChoiceInquiryTypeVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DB1899892965938400794CC2 /* UIViewController+IndicatorVIew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+IndicatorVIew.swift"; sourceTree = "<group>"; };
+		DB283F17295F0F3C00BB2C84 /* CustomAlertBaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAlertBaseViewController.swift; sourceTree = "<group>"; };
+		DB283F292960166E00BB2C84 /* UINavigationController+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UINavigationController+Ext.swift"; sourceTree = "<group>"; };
+		DB366A502963F77400C6A6B8 /* AppInquiryHistoryTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppInquiryHistoryTVC.swift; sourceTree = "<group>"; };
+		DB366A532963F79800C6A6B8 /* AppInquiryTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppInquiryTVC.swift; sourceTree = "<group>"; };
+		DB366A552963F7DA00C6A6B8 /* AppInquiryHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppInquiryHeaderView.swift; sourceTree = "<group>"; };
+		DB366A822965318F00C6A6B8 /* UIViewController+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Ext.swift"; sourceTree = "<group>"; };
+		DB366A842965336000C6A6B8 /* AlertLogoutVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertLogoutVC.swift; sourceTree = "<group>"; };
+		DB366A862965336B00C6A6B8 /* AlertNickNameVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertNickNameVC.swift; sourceTree = "<group>"; };
 		DB41476F2955AEE000FABBCA /* MegaCoffeeClone_KIM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MegaCoffeeClone_KIM.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB4147722955AEE000FABBCA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DB4147742955AEE000FABBCA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		DB4147762955AEE000FABBCA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DB4147762955AEE000FABBCA /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		DB4147792955AEE000FABBCA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DB41477B2955AEE100FABBCA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DB41477E2955AEE100FABBCA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DB4147802955AEE100FABBCA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DB41478A2955AFC300FABBCA /* UIViewController+Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Alert.swift"; sourceTree = "<group>"; };
+		DB41478C2955AFC900FABBCA /* UITextField+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+Ext.swift"; sourceTree = "<group>"; };
+		DB41478E2955B01500FABBCA /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		DB4147902955B01A00FABBCA /* DummyData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummyData.swift; sourceTree = "<group>"; };
+		DB4147922955B06F00FABBCA /* TermsOfServiceTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TermsOfServiceTVC.swift; sourceTree = "<group>"; };
+		DB4147942955B07300FABBCA /* MemberInfoManagementTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemberInfoManagementTVC.swift; sourceTree = "<group>"; };
+		DB4147962955B07700FABBCA /* OrderCustomHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderCustomHeaderView.swift; sourceTree = "<group>"; };
+		DB41479C2955B16100FABBCA /* WeekTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeekTVC.swift; sourceTree = "<group>"; };
+		DB41479E2955B16500FABBCA /* Month1TVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Month1TVC.swift; sourceTree = "<group>"; };
+		DB4147A02955B16800FABBCA /* Month3TVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Month3TVC.swift; sourceTree = "<group>"; };
+		DB4147A22955B16B00FABBCA /* TotalTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TotalTVC.swift; sourceTree = "<group>"; };
+		DB4147A52955B1CE00FABBCA /* OHDetail1TVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OHDetail1TVC.swift; sourceTree = "<group>"; };
+		DB4147A72955B1D000FABBCA /* OHDetail2TVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OHDetail2TVC.swift; sourceTree = "<group>"; };
+		DB4147A92955B1D900FABBCA /* OHDetail3TVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OHDetail3TVC.swift; sourceTree = "<group>"; };
+		DB4147AB2955B1DB00FABBCA /* OHDetail4TVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OHDetail4TVC.swift; sourceTree = "<group>"; };
+		DB4147AD2955B23900FABBCA /* CardNameTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardNameTVC.swift; sourceTree = "<group>"; };
+		DB4147AF2955B23C00FABBCA /* CardNumberTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardNumberTVC.swift; sourceTree = "<group>"; };
+		DB4147B12955B26500FABBCA /* CardExpirationPeriodTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardExpirationPeriodTVC.swift; sourceTree = "<group>"; };
+		DB4147B32955B26700FABBCA /* CardPWTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardPWTVC.swift; sourceTree = "<group>"; };
+		DB4147B52955B26900FABBCA /* CardDivisionTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardDivisionTVC.swift; sourceTree = "<group>"; };
+		DB4147B72955B2EE00FABBCA /* EventCustomHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventCustomHeaderView.swift; sourceTree = "<group>"; };
+		DB4147B92955B2F000FABBCA /* EventAndRankingEventTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventAndRankingEventTVC.swift; sourceTree = "<group>"; };
+		DB4147BB2955B2F200FABBCA /* NoticeTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoticeTVC.swift; sourceTree = "<group>"; };
+		DB4147BD2955B37F00FABBCA /* TermsOfServiceVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TermsOfServiceVC.swift; sourceTree = "<group>"; };
+		DB4147C42955B3D500FABBCA /* TOSDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TOSDetailVC.swift; sourceTree = "<group>"; };
+		DB4147C62955B4AA00FABBCA /* EventAndNoticeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventAndNoticeVC.swift; sourceTree = "<group>"; };
+		DB4147C82955B4AC00FABBCA /* EANDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EANDetailVC.swift; sourceTree = "<group>"; };
+		DB4147CA2955B56700FABBCA /* SimpleCardManagementVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleCardManagementVC.swift; sourceTree = "<group>"; };
+		DB4147CC2955B56C00FABBCA /* OrderHistroyVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderHistroyVC.swift; sourceTree = "<group>"; };
+		DB4147CE2955B59F00FABBCA /* SCRegistrationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCRegistrationVC.swift; sourceTree = "<group>"; };
+		DB4147D02955B68F00FABBCA /* OHDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OHDetailVC.swift; sourceTree = "<group>"; };
+		DB5AD249295B039C002324C7 /* UnRegisterVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnRegisterVC.swift; sourceTree = "<group>"; };
+		DB5AD24B295B039E002324C7 /* PermissionSettingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermissionSettingVC.swift; sourceTree = "<group>"; };
+		DB5AD24E295B03B0002324C7 /* MemberInfoManagementVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemberInfoManagementVC.swift; sourceTree = "<group>"; };
+		DB5AD252295B03B4002324C7 /* AccountSettingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountSettingVC.swift; sourceTree = "<group>"; };
+		DB5AD254295B061B002324C7 /* UIColor+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Ext.swift"; sourceTree = "<group>"; };
+		DB5AD256295B0678002324C7 /* ServiceCenterVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceCenterVC.swift; sourceTree = "<group>"; };
+		DB5AD25A295B067C002324C7 /* AppInquiryVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppInquiryVC.swift; sourceTree = "<group>"; };
+		DB5AD25C295B067E002324C7 /* ChoiceInquiryTypeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChoiceInquiryTypeVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +133,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DB283F16295F0F2100BB2C84 /* BaseViewController */ = {
+			isa = PBXGroup;
+			children = (
+				DB283F17295F0F3C00BB2C84 /* CustomAlertBaseViewController.swift */,
+			);
+			path = BaseViewController;
+			sourceTree = "<group>";
+		};
+		DB366A522963F77900C6A6B8 /* Account&ServiceTVC */ = {
+			isa = PBXGroup;
+			children = (
+				DB4147942955B07300FABBCA /* MemberInfoManagementTVC.swift */,
+				DB366A552963F7DA00C6A6B8 /* AppInquiryHeaderView.swift */,
+				DB366A532963F79800C6A6B8 /* AppInquiryTVC.swift */,
+				DB366A502963F77400C6A6B8 /* AppInquiryHistoryTVC.swift */,
+			);
+			path = "Account&ServiceTVC";
+			sourceTree = "<group>";
+		};
 		DB4147662955AEE000FABBCA = {
 			isa = PBXGroup;
 			children = (
@@ -58,13 +173,186 @@
 			children = (
 				DB4147722955AEE000FABBCA /* AppDelegate.swift */,
 				DB4147742955AEE000FABBCA /* SceneDelegate.swift */,
-				DB4147762955AEE000FABBCA /* ViewController.swift */,
 				DB4147782955AEE000FABBCA /* Main.storyboard */,
+				DB4147862955AF8600FABBCA /* Helpers */,
+				DB4147882955AFAD00FABBCA /* Models */,
+				DB4147892955AFB100FABBCA /* Views */,
+				DB4147872955AFA000FABBCA /* Controllers */,
 				DB41477B2955AEE100FABBCA /* Assets.xcassets */,
 				DB41477D2955AEE100FABBCA /* LaunchScreen.storyboard */,
 				DB4147802955AEE100FABBCA /* Info.plist */,
 			);
 			path = MegaCoffeeClone_KIM;
+			sourceTree = "<group>";
+		};
+		DB4147862955AF8600FABBCA /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				DB283F16295F0F2100BB2C84 /* BaseViewController */,
+				DB366A822965318F00C6A6B8 /* UIViewController+Ext.swift */,
+				DB1899892965938400794CC2 /* UIViewController+IndicatorVIew.swift */,
+				DB41478A2955AFC300FABBCA /* UIViewController+Alert.swift */,
+				DB283F292960166E00BB2C84 /* UINavigationController+Ext.swift */,
+				DB41478C2955AFC900FABBCA /* UITextField+Ext.swift */,
+				DB5AD254295B061B002324C7 /* UIColor+Ext.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		DB4147872955AFA000FABBCA /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				DB4147762955AEE000FABBCA /* MainViewController.swift */,
+				DB4147C32955B39C00FABBCA /* Account&Service */,
+				DB4147C12955B39800FABBCA /* OrderHistory */,
+				DB4147C02955B39600FABBCA /* SimpleCardManagement */,
+				DB4147C22955B39A00FABBCA /* EventAndNotice */,
+				DB4147BF2955B39300FABBCA /* TermsOfService */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		DB4147882955AFAD00FABBCA /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				DB41478E2955B01500FABBCA /* Model.swift */,
+				DB4147902955B01A00FABBCA /* DummyData.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		DB4147892955AFB100FABBCA /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				DB4147922955B06F00FABBCA /* TermsOfServiceTVC.swift */,
+				DB366A522963F77900C6A6B8 /* Account&ServiceTVC */,
+				DB41479B2955B0C700FABBCA /* OrderHistoryTVC */,
+				DB41479A2955B0C500FABBCA /* RegistrationCardTVC */,
+				DB4147992955B0C200FABBCA /* EventAndNoticeTVC */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		DB4147992955B0C200FABBCA /* EventAndNoticeTVC */ = {
+			isa = PBXGroup;
+			children = (
+				DB4147B72955B2EE00FABBCA /* EventCustomHeaderView.swift */,
+				DB4147B92955B2F000FABBCA /* EventAndRankingEventTVC.swift */,
+				DB4147BB2955B2F200FABBCA /* NoticeTVC.swift */,
+			);
+			path = EventAndNoticeTVC;
+			sourceTree = "<group>";
+		};
+		DB41479A2955B0C500FABBCA /* RegistrationCardTVC */ = {
+			isa = PBXGroup;
+			children = (
+				DB4147AD2955B23900FABBCA /* CardNameTVC.swift */,
+				DB4147AF2955B23C00FABBCA /* CardNumberTVC.swift */,
+				DB4147B12955B26500FABBCA /* CardExpirationPeriodTVC.swift */,
+				DB4147B32955B26700FABBCA /* CardPWTVC.swift */,
+				DB4147B52955B26900FABBCA /* CardDivisionTVC.swift */,
+			);
+			path = RegistrationCardTVC;
+			sourceTree = "<group>";
+		};
+		DB41479B2955B0C700FABBCA /* OrderHistoryTVC */ = {
+			isa = PBXGroup;
+			children = (
+				DB4147962955B07700FABBCA /* OrderCustomHeaderView.swift */,
+				DB41479C2955B16100FABBCA /* WeekTVC.swift */,
+				DB41479E2955B16500FABBCA /* Month1TVC.swift */,
+				DB4147A02955B16800FABBCA /* Month3TVC.swift */,
+				DB4147A22955B16B00FABBCA /* TotalTVC.swift */,
+				DB4147A42955B1C200FABBCA /* OrderHistoryDetailTVC */,
+			);
+			name = OrderHistoryTVC;
+			sourceTree = "<group>";
+		};
+		DB4147A42955B1C200FABBCA /* OrderHistoryDetailTVC */ = {
+			isa = PBXGroup;
+			children = (
+				DB4147A52955B1CE00FABBCA /* OHDetail1TVC.swift */,
+				DB4147A72955B1D000FABBCA /* OHDetail2TVC.swift */,
+				DB4147A92955B1D900FABBCA /* OHDetail3TVC.swift */,
+				DB4147AB2955B1DB00FABBCA /* OHDetail4TVC.swift */,
+			);
+			name = OrderHistoryDetailTVC;
+			sourceTree = "<group>";
+		};
+		DB4147BF2955B39300FABBCA /* TermsOfService */ = {
+			isa = PBXGroup;
+			children = (
+				DB4147BD2955B37F00FABBCA /* TermsOfServiceVC.swift */,
+				DB4147C42955B3D500FABBCA /* TOSDetailVC.swift */,
+			);
+			path = TermsOfService;
+			sourceTree = "<group>";
+		};
+		DB4147C02955B39600FABBCA /* SimpleCardManagement */ = {
+			isa = PBXGroup;
+			children = (
+				DB4147CA2955B56700FABBCA /* SimpleCardManagementVC.swift */,
+				DB4147CE2955B59F00FABBCA /* SCRegistrationVC.swift */,
+			);
+			path = SimpleCardManagement;
+			sourceTree = "<group>";
+		};
+		DB4147C12955B39800FABBCA /* OrderHistory */ = {
+			isa = PBXGroup;
+			children = (
+				DB4147CC2955B56C00FABBCA /* OrderHistroyVC.swift */,
+				DB4147D02955B68F00FABBCA /* OHDetailVC.swift */,
+			);
+			path = OrderHistory;
+			sourceTree = "<group>";
+		};
+		DB4147C22955B39A00FABBCA /* EventAndNotice */ = {
+			isa = PBXGroup;
+			children = (
+				DB4147C62955B4AA00FABBCA /* EventAndNoticeVC.swift */,
+				DB4147C82955B4AC00FABBCA /* EANDetailVC.swift */,
+			);
+			path = EventAndNotice;
+			sourceTree = "<group>";
+		};
+		DB4147C32955B39C00FABBCA /* Account&Service */ = {
+			isa = PBXGroup;
+			children = (
+				DB5AD247295B0385002324C7 /* Account */,
+				DB5AD248295B038B002324C7 /* Service */,
+			);
+			path = "Account&Service";
+			sourceTree = "<group>";
+		};
+		DB5AD247295B0385002324C7 /* Account */ = {
+			isa = PBXGroup;
+			children = (
+				DB5AD252295B03B4002324C7 /* AccountSettingVC.swift */,
+				DB5AD24D295B03A2002324C7 /* MemberInfo */,
+				DB5AD24B295B039E002324C7 /* PermissionSettingVC.swift */,
+				DB366A842965336000C6A6B8 /* AlertLogoutVC.swift */,
+			);
+			path = Account;
+			sourceTree = "<group>";
+		};
+		DB5AD248295B038B002324C7 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				DB5AD256295B0678002324C7 /* ServiceCenterVC.swift */,
+				DB5AD25C295B067E002324C7 /* ChoiceInquiryTypeVC.swift */,
+				DB5AD25A295B067C002324C7 /* AppInquiryVC.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		DB5AD24D295B03A2002324C7 /* MemberInfo */ = {
+			isa = PBXGroup;
+			children = (
+				DB5AD24E295B03B0002324C7 /* MemberInfoManagementVC.swift */,
+				DB366A862965336B00C6A6B8 /* AlertNickNameVC.swift */,
+				DB5AD249295B039C002324C7 /* UnRegisterVC.swift */,
+			);
+			path = MemberInfo;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,8 +426,56 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DB4147772955AEE000FABBCA /* ViewController.swift in Sources */,
+				DB4147772955AEE000FABBCA /* MainViewController.swift in Sources */,
+				DB4147972955B07700FABBCA /* OrderCustomHeaderView.swift in Sources */,
+				DB41478B2955AFC300FABBCA /* UIViewController+Alert.swift in Sources */,
+				DB4147A12955B16800FABBCA /* Month3TVC.swift in Sources */,
+				DB4147B02955B23C00FABBCA /* CardNumberTVC.swift in Sources */,
+				DB4147C72955B4AA00FABBCA /* EventAndNoticeVC.swift in Sources */,
+				DB4147932955B06F00FABBCA /* TermsOfServiceTVC.swift in Sources */,
+				DB5AD24C295B039E002324C7 /* PermissionSettingVC.swift in Sources */,
 				DB4147732955AEE000FABBCA /* AppDelegate.swift in Sources */,
+				DB5AD255295B061B002324C7 /* UIColor+Ext.swift in Sources */,
+				DB5AD257295B0678002324C7 /* ServiceCenterVC.swift in Sources */,
+				DB4147CB2955B56700FABBCA /* SimpleCardManagementVC.swift in Sources */,
+				DB4147AA2955B1D900FABBCA /* OHDetail3TVC.swift in Sources */,
+				DB4147A32955B16B00FABBCA /* TotalTVC.swift in Sources */,
+				DB18998A2965938400794CC2 /* UIViewController+IndicatorVIew.swift in Sources */,
+				DB5AD25D295B067E002324C7 /* ChoiceInquiryTypeVC.swift in Sources */,
+				DB4147D12955B68F00FABBCA /* OHDetailVC.swift in Sources */,
+				DB5AD25B295B067C002324C7 /* AppInquiryVC.swift in Sources */,
+				DB4147A82955B1D000FABBCA /* OHDetail2TVC.swift in Sources */,
+				DB5AD24F295B03B0002324C7 /* MemberInfoManagementVC.swift in Sources */,
+				DB4147912955B01A00FABBCA /* DummyData.swift in Sources */,
+				DB4147BC2955B2F200FABBCA /* NoticeTVC.swift in Sources */,
+				DB366A852965336000C6A6B8 /* AlertLogoutVC.swift in Sources */,
+				DB4147C92955B4AC00FABBCA /* EANDetailVC.swift in Sources */,
+				DB4147B42955B26700FABBCA /* CardPWTVC.swift in Sources */,
+				DB5AD253295B03B4002324C7 /* AccountSettingVC.swift in Sources */,
+				DB366A542963F79800C6A6B8 /* AppInquiryTVC.swift in Sources */,
+				DB41478F2955B01500FABBCA /* Model.swift in Sources */,
+				DB4147B82955B2EE00FABBCA /* EventCustomHeaderView.swift in Sources */,
+				DB4147BA2955B2F000FABBCA /* EventAndRankingEventTVC.swift in Sources */,
+				DB4147BE2955B37F00FABBCA /* TermsOfServiceVC.swift in Sources */,
+				DB283F18295F0F3C00BB2C84 /* CustomAlertBaseViewController.swift in Sources */,
+				DB366A832965318F00C6A6B8 /* UIViewController+Ext.swift in Sources */,
+				DB41479F2955B16500FABBCA /* Month1TVC.swift in Sources */,
+				DB4147A62955B1CE00FABBCA /* OHDetail1TVC.swift in Sources */,
+				DB4147B62955B26900FABBCA /* CardDivisionTVC.swift in Sources */,
+				DB283F2A2960166E00BB2C84 /* UINavigationController+Ext.swift in Sources */,
+				DB4147CD2955B56C00FABBCA /* OrderHistroyVC.swift in Sources */,
+				DB366A512963F77400C6A6B8 /* AppInquiryHistoryTVC.swift in Sources */,
+				DB366A872965336B00C6A6B8 /* AlertNickNameVC.swift in Sources */,
+				DB4147952955B07300FABBCA /* MemberInfoManagementTVC.swift in Sources */,
+				DB366A562963F7DA00C6A6B8 /* AppInquiryHeaderView.swift in Sources */,
+				DB41478D2955AFC900FABBCA /* UITextField+Ext.swift in Sources */,
+				DB4147B22955B26500FABBCA /* CardExpirationPeriodTVC.swift in Sources */,
+				DB41479D2955B16200FABBCA /* WeekTVC.swift in Sources */,
+				DB4147C52955B3D500FABBCA /* TOSDetailVC.swift in Sources */,
+				DB5AD24A295B039C002324C7 /* UnRegisterVC.swift in Sources */,
+				DB4147AC2955B1DB00FABBCA /* OHDetail4TVC.swift in Sources */,
+				DB4147AE2955B23900FABBCA /* CardNameTVC.swift in Sources */,
+				DB4147CF2955B59F00FABBCA /* SCRegistrationVC.swift in Sources */,
 				DB4147752955AEE000FABBCA /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

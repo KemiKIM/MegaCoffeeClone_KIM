@@ -13,8 +13,19 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        
+        if #available(iOS 15.0, *) {
+            let appearance = UITabBarAppearance()
+            appearance.configureWithOpaqueBackground()
+            
+            let fontAttributes = [NSAttributedString.Key.font: UIFont.systemFont(ofSize: 14.0, weight: .heavy)]
+            
+            UITabBar.appearance().backgroundColor = UIColor.white
+            UITabBar.appearance().tintColor = UIColor.black
+            UITabBarItem.appearance().setTitleTextAttributes(fontAttributes, for: .normal)
+        }
         return true
+        
     }
 
     // MARK: UISceneSession Lifecycle
