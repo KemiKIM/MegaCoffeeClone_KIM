@@ -16,6 +16,7 @@
 		DB366A832965318F00C6A6B8 /* UIViewController+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB366A822965318F00C6A6B8 /* UIViewController+Ext.swift */; };
 		DB366A852965336000C6A6B8 /* AlertLogoutVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB366A842965336000C6A6B8 /* AlertLogoutVC.swift */; };
 		DB366A872965336B00C6A6B8 /* AlertNickNameVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB366A862965336B00C6A6B8 /* AlertNickNameVC.swift */; };
+		DB380A752A1466C6008DBFCC /* AppInquiryVC2.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB380A742A1466C6008DBFCC /* AppInquiryVC2.swift */; };
 		DB4147732955AEE000FABBCA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB4147722955AEE000FABBCA /* AppDelegate.swift */; };
 		DB4147752955AEE000FABBCA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB4147742955AEE000FABBCA /* SceneDelegate.swift */; };
 		DB4147772955AEE000FABBCA /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB4147762955AEE000FABBCA /* MainViewController.swift */; };
@@ -73,6 +74,7 @@
 		DB366A822965318F00C6A6B8 /* UIViewController+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Ext.swift"; sourceTree = "<group>"; };
 		DB366A842965336000C6A6B8 /* AlertLogoutVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertLogoutVC.swift; sourceTree = "<group>"; };
 		DB366A862965336B00C6A6B8 /* AlertNickNameVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertNickNameVC.swift; sourceTree = "<group>"; };
+		DB380A742A1466C6008DBFCC /* AppInquiryVC2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppInquiryVC2.swift; sourceTree = "<group>"; };
 		DB41476F2955AEE000FABBCA /* MegaCoffeeClone_KIM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MegaCoffeeClone_KIM.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB4147722955AEE000FABBCA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DB4147742955AEE000FABBCA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -341,6 +343,7 @@
 				DB5AD256295B0678002324C7 /* ServiceCenterVC.swift */,
 				DB5AD25C295B067E002324C7 /* ChoiceInquiryTypeVC.swift */,
 				DB5AD25A295B067C002324C7 /* AppInquiryVC.swift */,
+				DB380A742A1466C6008DBFCC /* AppInquiryVC2.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -445,6 +448,7 @@
 				DB4147D12955B68F00FABBCA /* OHDetailVC.swift in Sources */,
 				DB5AD25B295B067C002324C7 /* AppInquiryVC.swift in Sources */,
 				DB4147A82955B1D000FABBCA /* OHDetail2TVC.swift in Sources */,
+				DB380A752A1466C6008DBFCC /* AppInquiryVC2.swift in Sources */,
 				DB5AD24F295B03B0002324C7 /* MemberInfoManagementVC.swift in Sources */,
 				DB4147912955B01A00FABBCA /* DummyData.swift in Sources */,
 				DB4147BC2955B2F200FABBCA /* NoticeTVC.swift in Sources */,
@@ -638,6 +642,9 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "kim.MegaCoffeeClone-KIM";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -666,6 +673,9 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "kim.MegaCoffeeClone-KIM";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;

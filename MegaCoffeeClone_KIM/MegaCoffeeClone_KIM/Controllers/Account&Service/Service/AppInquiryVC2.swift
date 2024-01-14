@@ -1,5 +1,5 @@
 //
-//  AppInquiryVC.swift
+//  AppInquiryVC2.swift
 //  CollectionView_Code
 //
 //  Created by 김성호 on 2022/12/13.
@@ -9,17 +9,34 @@ import UIKit
 import PhotosUI
 
 // MARK: [Enum]
-enum AppInquiry {
+enum AppInquiry2 {
     case inquiry
     case history
 }
 
 
-class AppInquiryVC: UIViewController {
-    var appInquiry = AppInquiry.inquiry
-    var uiImagePC = UIImagePickerController()
+class AppInquiryVC2: UIViewController, UINavigationControllerDelegate, PHPickerViewControllerDelegate {
+    func picker(_ picker: PHPickerViewController, didFinishPicking results: [PHPickerResult]) {
+        picker.dismiss(animated: true)
+    }
     
+    var appInquiry = AppInquiry2.inquiry
+    // let uiImagePC = UIImagePickerController()
+    
+    
+    
+    var pickerLibrary: PHPickerViewController = {
+        var config = PHPickerConfiguration()
+        // 갯수 선택제한
+        config.selectionLimit = 1
+        config.filter = .any(of: [.images])
+        
+        let p = PHPickerViewController(configuration: config)
+        return p
+    }()
    
+    
+    
     
     // MARK: [var] [0] Frame
     private let tableView: UITableView = {
@@ -55,7 +72,8 @@ class AppInquiryVC: UIViewController {
                      image: UIImage(systemName: "photo.on.rectangle"))
                 { _ in
                     print("사진 보관함 실행")
-                    self.openPhoto()
+                    // self.openPhoto()
+                    self.phpickerPhoto()
                 },
             // (2)
             UIAction(title: "사진 찍기",
@@ -100,11 +118,6 @@ class AppInquiryVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
-        
-        // picker = UIImagePickerController()
-        
-        
         tableView.delegate = self
         tableView.dataSource = self
         
@@ -114,13 +127,21 @@ class AppInquiryVC: UIViewController {
         NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide), name: UIResponder.keyboardWillHideNotification, object: nil)
         
         layout()
+        
+        
+        
+        pickerLibrary.delegate = self
+        
+        
     }
     
     
     
     
-    
-    
+    func phpickerPhoto() {
+        
+        self.present(pickerLibrary, animated: true)
+    }
     
     
     
@@ -198,7 +219,8 @@ class AppInquiryVC: UIViewController {
     private func openCamera() {
         
         if(UIImagePickerController.isSourceTypeAvailable(UIImagePickerController.SourceType.camera)) {
-            
+            let uiImagePC = UIImagePickerController()
+            uiImagePC.delegate = self
             uiImagePC.sourceType = .camera
             uiImagePC.allowsEditing = true
             
@@ -212,6 +234,8 @@ class AppInquiryVC: UIViewController {
     
     
     private func openPhoto() {
+        let uiImagePC = UIImagePickerController()
+        uiImagePC.delegate = self
         uiImagePC.sourceType = .photoLibrary
         uiImagePC.allowsEditing = true
         
@@ -322,7 +346,7 @@ class AppInquiryVC: UIViewController {
 
 
 // MARK: [TableView - DataSource]
-extension AppInquiryVC: UITableViewDataSource {
+extension AppInquiryVC2: UITableViewDataSource {
 
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
         return 50.0
@@ -430,8 +454,15 @@ extension AppInquiryVC: UITableViewDataSource {
 
 
 // MARK: [TableView - Delegate]
-extension AppInquiryVC: UITableViewDelegate {
+extension AppInquiryVC2: UITableViewDelegate {
 
+    
+}
+
+
+
+
+extension AppInquiryVC2: UIImagePickerControllerDelegate {
     
 }
 
@@ -440,13 +471,9 @@ extension AppInquiryVC: UITableViewDelegate {
 
 
 
-
-
-
-
 // MARK: [Layout]
 
-extension AppInquiryVC {
+extension AppInquiryVC2 {
     
     private func layout() {
         self.view.backgroundColor = .systemBackground
@@ -497,7 +524,7 @@ extension AppInquiryVC {
 
 
 // MARK: [UIDocumentPickerDelegate]
-extension AppInquiryVC: UIDocumentPickerDelegate {
+extension AppInquiryVC2: UIDocumentPickerDelegate {
     
     private func documentPicker(_ controller: UIViewController, didPickDocumentsAt urls: [URL]) {
         guard let url = urls.first else { return }

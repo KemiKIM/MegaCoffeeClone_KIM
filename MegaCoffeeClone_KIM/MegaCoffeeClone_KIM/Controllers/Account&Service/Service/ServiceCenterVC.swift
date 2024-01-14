@@ -109,7 +109,7 @@ class ServiceCenterVC: UIViewController {
         inquiry.titleLabel?.font = .boldSystemFont(ofSize: 18)
         inquiry.layer.cornerRadius = 7
         
-        inquiry.addTarget(self, action: #selector(appInquiryButtonTapped(_:)), for: .touchUpInside)
+        inquiry.addTarget(self, action: #selector(appInquiryButtonTapped), for: .touchUpInside)
         
         
         return inquiry
@@ -124,8 +124,11 @@ class ServiceCenterVC: UIViewController {
     // MARK: [Override]
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        layout()
+        
+        
+        self.layout()
+        
+       
     }
     
 
@@ -158,9 +161,14 @@ class ServiceCenterVC: UIViewController {
     
     
     
-    @objc private func appInquiryButtonTapped(_ sender: UIButton) {
-        let vc = AppInquiryVC()
-        self.navigationController?.pushViewController(vc, animated: true)
+    @objc
+    func appInquiryButtonTapped() {
+        DispatchQueue.main.async {
+            // let vc = AppInquiryVC()
+            let vc = AppInquiryVC2()
+            self.navigationController?.pushViewController(vc, animated: true)
+        }
+       
     }
     
     

@@ -11,7 +11,7 @@ class AppInquiryHeaderView: UITableViewHeaderFooterView {
     
     
     // MARK: [변수 선언]
-    lazy var inquiryButton: UIButton = {
+    let inquiryButton: UIButton = {
         let inquiry = UIButton(type: .system)
         
         inquiry.setTitleColor(UIColor.black, for: .normal)
@@ -25,7 +25,7 @@ class AppInquiryHeaderView: UITableViewHeaderFooterView {
     
     
     
-    lazy var historyButton: UIButton = {
+    let historyButton: UIButton = {
         let history = UIButton(type: .system)
 
         history.setTitleColor(UIColor.black, for: .normal)
@@ -38,7 +38,7 @@ class AppInquiryHeaderView: UITableViewHeaderFooterView {
         
     }()
     
-    lazy var stackView: UIStackView = {
+    let stackView: UIStackView = {
         let stackView = UIStackView()
         
         stackView.distribution = .fillProportionally
@@ -48,7 +48,7 @@ class AppInquiryHeaderView: UITableViewHeaderFooterView {
     }()
     
     
-    lazy var underBar1: UIView = {
+    let underBar1: UIView = {
         let bar = UIView()
         
         bar.backgroundColor = .black
@@ -57,7 +57,7 @@ class AppInquiryHeaderView: UITableViewHeaderFooterView {
         return bar
     }()
     
-    lazy var underBar2: UIView = {
+let underBar2: UIView = {
         let bar = UIView()
         
         bar.backgroundColor = .black

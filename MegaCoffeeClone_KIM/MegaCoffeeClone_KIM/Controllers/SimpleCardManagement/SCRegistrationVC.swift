@@ -77,7 +77,7 @@ class SCRegistrationVC: UIViewController {
     
     
     
-    // MARK: [Keyboard] -> 얼추 많이 온 듯?
+    // MARK: [Keyboard]
     @objc func keyboardWillShow(_ sender: NSNotification) {
         
         if let keyboardSize = (sender.userInfo?[UIResponder.keyboardFrameBeginUserInfoKey] as? NSValue)?.cgRectValue {

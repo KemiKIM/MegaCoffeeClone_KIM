@@ -15,7 +15,7 @@ class AppInquiryTVC: UITableViewCell {
     
     
     // MARK: [var] [1]
-    lazy var choiceInquiryTypeButton: UIButton = {
+    let choiceInquiryTypeButton: UIButton = {
         let choiceButton = UIButton(type: .system)
         
         
@@ -36,7 +36,7 @@ class AppInquiryTVC: UITableViewCell {
     
     
     
-    lazy var choiceInquiryTypeButtonLabel: UILabel = {
+    let choiceInquiryTypeButtonLabel: UILabel = {
         let label = UILabel()
         let attachment = NSTextAttachment()
         
@@ -57,7 +57,7 @@ class AppInquiryTVC: UITableViewCell {
     
     
     // MARK: [var] [2] Write View
-    lazy var writeContentBackView: UIView = {
+    let writeContentBackView: UIView = {
         let writeView = UIView(frame: .zero)
         
         
@@ -70,17 +70,17 @@ class AppInquiryTVC: UITableViewCell {
     }()
     
     
-    lazy var titleTextField: UITextField = {
+    let titleTextField: UITextField = {
         let text = UITextField()
         
         text.placeholder = "제목을 입력해 주세요. (50자이내)"
-        text.delegate = self
+        
         
         return text
     }()
     
-    lazy var titleTextFieldBottomLineView = UIView()
-    lazy var textView: UITextView = {
+    let titleTextFieldBottomLineView = UIView()
+    let textView: UITextView = {
         let textView = UITextView()
         
         textView.font = .systemFont(ofSize: 17)
@@ -93,7 +93,7 @@ class AppInquiryTVC: UITableViewCell {
     
     
     // MARK: [var] [3]
-    lazy var imageLabel: UILabel = {
+    let imageLabel: UILabel = {
         let imageLabel = UILabel()
         
         
@@ -108,12 +108,12 @@ class AppInquiryTVC: UITableViewCell {
     
     
     
-    lazy var photoRegistrationButton: UIButton = {
+    let photoRegistrationButton: UIButton = {
         let photo = UIButton(type: .system)
         
         
         photo.setTitle("사진 등록", for: .normal)
-        photo.setTitleColor(customBrownColor, for: .normal)
+        photo.setTitleColor(UIColor(r: 74, g: 44, b: 42), for: .normal)
         
         photo.titleLabel?.font = .boldSystemFont(ofSize: 18)
         photo.layer.cornerRadius = 7
@@ -124,7 +124,7 @@ class AppInquiryTVC: UITableViewCell {
         return photo
     }()
     
-    lazy var fileInforLabel: UILabel = {
+    let fileInforLabel: UILabel = {
         let file = UILabel()
         
         
@@ -138,7 +138,7 @@ class AppInquiryTVC: UITableViewCell {
     
     // MARK: [var] [4] thisthisthisthisthisthisthis
     
-    lazy var inquiryRegistrationButton: UIButton = {
+    let inquiryRegistrationButton: UIButton = {
         let inquiry = UIButton(type: .system)
         
         
@@ -156,12 +156,12 @@ class AppInquiryTVC: UITableViewCell {
     
     
     
-    lazy var contentInitializationButton: UIButton = {
+    let contentInitializationButton: UIButton = {
         let content = UIButton()
         
         
         content.setTitle("내용 초기화", for: .normal)
-        content.setTitleColor(customBrownColor, for: .normal)
+        content.setTitleColor(UIColor(r: 74, g: 44, b: 42), for: .normal)
     
         content.backgroundColor = UIColor(r: 241, g: 224, b: 172)
         content.titleLabel?.font = .boldSystemFont(ofSize: 18)
@@ -185,6 +185,8 @@ class AppInquiryTVC: UITableViewCell {
         super.init(style: .default, reuseIdentifier: reuseIdentifier)
         self.selectionStyle = .none
         
+        
+        titleTextField.delegate = self
         
         notiSetting()
         
